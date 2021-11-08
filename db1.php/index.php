@@ -16,6 +16,17 @@
         
         <p>color</p>
          <input type="text"name="color">
+<!--  <form action="db.php" method="post">
+            <p>Nombre:</p>
+            <input type="text" name="nombre" > 
+            <br>
+            <p>Apellidos:</p>
+            <input type="text" name="apellidos" >
+            <br>
+            <p>Email:</p>
+            <input type="text" name="email" >
+            <br>
+            <input type="submit" value="envia">   -->
 
 </body>
 </html>
