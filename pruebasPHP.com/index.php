@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php
-     $servername = "wp_bd";
+     $servername = "localhost";
      $username = "wp_miblog_nuria";
      $password = "4bgpe3";
-     
+     $dbname = "wp_bd";
      // Create connection
      $conn = mysqli_connect($servername, $username, $password);
      

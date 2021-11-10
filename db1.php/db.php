@@ -9,10 +9,10 @@
 <body>
 
     <?php
-        $servername = "localhost";
-        $username = "pruebasPHPuser";
-        $password = "user";
-        $dbname = "pruebasPHPdb";
+        $servername = "localhost"; # $db_host="localhost" direccion;
+        $username = "pruebasPHPuser"; # $db_usuario;
+        $password = "user";  # $ db_contrasena;
+        $dbname = "pruebasPHPdb";   # $db_nombre;
         
         // Create connection
         $conn = mysqli_connect($servername, $username, $password, $dbname);
