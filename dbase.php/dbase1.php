@@ -8,12 +8,13 @@
 </head>
 <body>
 <?php
-$servername = "localhost";
+$servername = "localhost"; // direccion del servidor
 $username = "wp_miblog_nuria"; // nombre usuario
 $password = "4bgpe3";
-$dbname = "wp_bd";
+$dbname = "wp_bd"; // nombre de la base de datos
 
-// Create connection
+// Create connection  creamos la conexion.
+// direccion de la base de datos que esta en la variable $servername y asi
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
@@ -38,6 +39,13 @@ VALUES ('$nombre','$apellidos','$email')";
     }
     
     mysqli_close($conn);
+
+    // $consulta = "SELECT * FROM DATOSPERSONALES;
+    // $resyltados = mysqli_query($conexion, $consulta;
+    // $fila = mysqli_fetch_row($resultados);
+    // echo  $fila[0] . " ";       . " ";  asi hago espacios
+    // echo  $fila[1] . " ";
+    // echo  $fila[2] . " ";
     ?>
 </body>
 </html>
