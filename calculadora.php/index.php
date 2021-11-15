@@ -9,20 +9,16 @@
 <body>
 <form name = "calc" action = "calc.php" method="post">
 
-<p> A <input type="text" name = "a" size = "10" value ="<? echo $y; ?>">;</p>
-<p> B <input type="text" name = "b" size = "10" value ="<? echo $z; ?>">;</p>
+<p>  <label>A</label>   <input type="text" name = "a" size = "10"></p>
+<p>  <label>B</label> <input type="text" name = "b" size = "10"></p>
 <br>
 
-<input type="submit" value ="Suma" name = "btsuma">;
-<input type="submit" value ="Resta" name = "btresta">;
-<input type="submit" value ="Multiplicacion" name = "btmlt">;
-<input type="submit" value ="Division" name = "btdiv">;
+<input type="submit" value ="Suma" name = "btsuma">
+<input type="submit" value ="Resta" name = "btresta">
+<input type="submit" value ="Multiplicacion" name = "btmlt">
+<input type="submit" value ="Division" name = "btdiv">
 
 </form>
-<form action="procesar.php" method="post">
-<p>Nombre:  <input type="text" name="nombre"/> </p>
-<p>Asunto:  <input type="text" name="asunto"/> </p>
-<p>Mensaje:  <input type="text" name="mensaje"/> </p>
 
 </body>
 </html>

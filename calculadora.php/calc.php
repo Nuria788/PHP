@@ -17,7 +17,7 @@
         echo "$y + $z es " . $c;
     }
     if (isset($_POST['btresta'])){
-        $c = $y + $z;
+        $c = $y - $z;
         echo "$y - $z es " . $c;
     }
     if (isset($_POST['btmlt'])){

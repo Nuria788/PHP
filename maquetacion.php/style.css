@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        
+        overflow: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .titulo{
+        border: rgb(0, 0, 0) 4px solid;
+        height:10vh;
+        background-color: rgb(24, 44, 82);
+        overflow: hidden;
+    }
+    
+    .galeria{
+        border: rgb(0, 0, 0) 4px solid;
+        float: left;
+    }
+    
+    .copyright{
+        border: rgb(0, 0, 0) 4px solid;
+        background: blue;
+    }
+    
+    
+    
