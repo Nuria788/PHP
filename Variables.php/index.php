@@ -13,6 +13,7 @@
 Crea dos variables cuyo nombre sea "uno" y "dos"
 he imprimelas por pantalla. Pon un comentario 
 con el tipo de dato que contienen
+Ejercicio 1
 */
 
 // String
@@ -26,6 +27,7 @@ echo "UNO: " . $uno. "<br>";
 echo "DOS: " . $dos. "<Hr>";
 
 /*
+Ejercicio 2
 Calcula los cuadrados de los 30 primeros numeros naturales
 */
 for($i = 1; $i <= 30; $i++){
@@ -35,6 +37,7 @@ for($i = 1; $i <= 30; $i++){
 }
 echo "<hr>";
 /*
+Ejercicio 3
 Modifica el ejercicio anterior para que muestre 
 al lado de cada cuadrado si es par o impar */
 
