@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="estilo10.css">
 </head>
 <body>
+
+<!-- Crear un formulario post donde se recoja:
+Un texto.
+Un color
+Un numero
+En la pagina activada por el formulario post deberéis:
+Medir la longitud del texto introducido. 
+(Ayuda: existe una función mide la longitud de una string)
+Sacar la longitud en pantalla con un h1: "diciendo la longitud es:"
+Deducir si la longitud es par o impar. (Ayuda: utilizar %2 para saber 
+si es par o impar)
+Sacar por pantalla si es par o impar con un h3
+Crear tantos párrafos como grande sea el numero, dentro de cada parrafo 
+añadir el texto con el color introducido en el formulario
+Si la longitud era impar poner las letras en negrita, sino en cursiva.-->
+
+
         <?php
             $longitud = strlen($_POST["texto"]);
 
