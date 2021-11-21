@@ -26,37 +26,39 @@ Si la longitud era impar poner las letras en negrita, sino en cursiva.-->
 
 
         <?php
-            $longitud = strlen($_POST["texto"]);
+           $longitud = strlen($_POST["texto"]);
 
-            echo "<h1> La longitud es: $longitud</h1>";
+           echo "<h1> La longitud es: $longitud</h1>";
 
-            $esPar = true;
+           $esPar = true;
 
-            if ($longitud%2 == 1){
-                echo "<h3> El texto introducido es impar </h3>";
-                $esPar = false;
+           if ($longitud%2 == 1){
+               echo "<h3> El texto introducido es impar </h3>";
+               $esPar = false;
 
-            } else {
-                echo "<h3> El texto introducido es par </h3>";
-                $esPar = true;
-            }
+           } else {
+               echo "<h3> El texto introducido es par </h3>";
+               $esPar = true;
+           }
 
-            $colorTexto= $_POST['color'];
+           $colorTexto= $_POST['color'];
 
-            for ($i = 1 ; $i <= $longitud ; $i++){
+           for ($i = 1 ; $i <= $longitud ; $i++){
 
-                if ($esPar) {
-                    echo "<p style = \"color:$colorTexto; \" ><b>".$_POST['texto']."</b></p>";
+               if ($esPar) {
+                   echo "<p style = \"color:$colorTexto; \" ><b>".$_POST['texto']."</b></p>";
 
-                } else{
-                    echo "<p style = \"color:$colorTexto;\" ><i>".$_POST['texto']."</i></p>";
-                }
-
-
-            }
+               } else{
+                   echo "<p style = \"color:$colorTexto;\" ><i>".$_POST['texto']."</i></p>";
+               }
 
 
-        ?>
+           }
+
+
+       ?>
+
+
 
 
 

@@ -18,6 +18,22 @@
 <input type="submit" value ="Multiplicacion" name = "btmlt">
 <input type="submit" value ="Division" name = "btdiv">
 
+
+<h1>Otra calculadora</h1>
+<form name = "calc" action = "calc.php" method="post">
+
+  <input type="text" name = "n1">
+<select name="op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<input type="text" name ="n2">
+<input type="submit" name="enviar">
+
+
+
 </form>
 
 </body>

@@ -29,7 +29,24 @@
         if ($z != 0) $c = $y / $z;
             else $c = 0;
             echo "$y / $z es " . $c;
+
     }
+    echo "<br><br>";
+
+    $n1 = $_POST['n1'];
+    $n2 = $_POST['n2'];
+    $op = $_POST['op'];
+    $resultado0 = 0;
+    if ($op == "+"){
+        $resultado =$n1 + $n2;
+    }else if ($op == "-"){
+        $resultado = $n1 - $n2;
+    }else if ($op == "*"){
+        $resultado = $n1*$n2;
+    }else {
+        $resultado = $n1/$n2;
+    }
+    echo "El resultado es: " . $resultado;
     ?>
 
    

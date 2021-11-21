@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="estilo10.css">
 </head>
 <body>
-        <form action="ejer10.php" method="post">
-            <p>Texto <input type="text" name="texto"> </p>
 
-            <p>Texto <input type="color" name="color" > </p>
+<form action="ejer10.php" method="post">
+            <p>Añade un texto <input type="text" name="texto"> </p>
 
-            <p>Texto <input type="number" name="numero"> </p>
+            <p>Color <input type="color" name="color" > </p>
+
+            <p>Introduce un número <input type="number" name="numero"> </p>
             
             <input type="submit" value="enviar">
         

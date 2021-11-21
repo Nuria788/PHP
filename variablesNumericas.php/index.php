@@ -121,6 +121,89 @@ for ($i = 1; $i <= 10; $i++){
 echo "<hr>";
 
 
+/*Crea una funcion que imprima un triangulo dependiendo del numero que se mande por parametro*/ 
+
+echo "<h2>Ejercicio 6</h2>"; 
+
+function triangulo($numero){
+    for ($i=1; $i <= $numero; $i++) {
+            for ($j=0; $j < $i; $j++){
+                echo "*";
+            }
+            echo "<br>";
+    }
+}
+triangulo(5);
+
+/*Crear una function que muestre la suma de numeros consecutivos del 0 al numero mandado por parametro*/
+
+echo "<h2>Ejercicio 7</h2>"; 
+
+function suma ($numero){
+    $s = 0;
+    for ($i = 1; $i <= $numero; $i++){
+        $s = $s + $i;
+    }
+    echo "La suma es: " . $s;
+}
+suma(3);
+
+/* Crea una funcion que imprima un cuadrado dependiendo del numero que se mande por parametro*/
+
+echo "<h2>Ejercicio 8 </h2>"; 
+
+
+function cuadrado($numero){
+    for ($i=1; $i <= $numero; $i++) {
+            for ($j=0; $j < $numero; $j++){
+                echo "* &nbsp; ";  //&nbsp; poner espacios extras
+            }
+            echo "<br>";
+    }
+}
+cuadrado(6);
+
+
+
+/* Crea una funciones para el manejo de arreglos mediante el paso de parametros
+(Agregar, Mostrar y Ordenar) */
+
+echo "<h2>Ejercicio 9 Ordenar</h2>"; 
+function agregar($arreglo,$numero){
+    $arreglo[] = $numero;
+    return $arreglo;
+}
+function mostrar($arreglo){
+    for ($i = 0; $i < count($arreglo); $i++){
+        echo "[$i] = $arreglo[$i] ";
+    }
+    echo "<br>";
+}
+
+function ordenar ($arreglo){
+        for ($i = 0; $i < count($arreglo); $i++){
+            for ($j = 0; $j < count($arreglo)-1; $j++){
+                if($arreglo[$j] > $arreglo[$j + 1 ]){
+                    $temp = $arreglo[$j]; //temp =  9
+                    $arreglo[$j] = $arreglo[$j + 1];
+                    $arreglo [$j+1] = $temp;                
+            }  
+        }
+        mostrar($arreglo);
+    }
+    return $arreglo;
+}
+$a = array();
+$a = agregar($a,5);
+$a = agregar($a,8);
+$a = agregar($a,9);
+$a = agregar($a,1);
+$a = agregar($a,7);
+mostrar($a);
+$a = ordenar($a);
+echo "<br>";
+mostrar ($a);
+
 ?>
 
 
