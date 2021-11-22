@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <form action="ejer8.php" method="get">
+    <form action="ejercicio8.php" method="get">
         <p>numero de divs </p>
         <input type="text" name="numero">
 
